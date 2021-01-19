@@ -1,13 +1,15 @@
 // ギア付きモータの制御
   void setup()
 {
-  pinMode(2, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
+
 }
 
 void loop()
 {
-   digitalWrite(2, HIGH);
-   delay(800);
-   digitalWrite(2, LOW);
-   delay(2400);
+   analogWrite(9, 128);
+   analogWrite(10, 128);
+   
+   delay(3000);
 }
