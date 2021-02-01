@@ -16,7 +16,7 @@ void loop()
   
   digitalWrite(10, LOW);
   digitalWrite(11, LOW);
-  delay(1000);
+  delay(10000);
 
   analogWrite(10, 255);
   digitalWrite(11, LOW);
@@ -24,5 +24,5 @@ void loop()
 
   digitalWrite(10, LOW);
   digitalWrite(11, LOW);
-  delay(1000);
+  delay(10000);
 }
