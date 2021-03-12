@@ -12,23 +12,15 @@ void setup() {
 }
  
 void loop() {
-  /*
-  tone(6, 880); //普通に動く
-  delay(500);
-  noTone(6); // 2/13に試す。駄目なら消す
-  delay(1000);
-  */
-  //digitalWrite(7, LOW);
-  //delay(20);
   // 6ピンをHIGH, LOW切り替え
   for(int i = 0; i < 1000; i++){
     digitalWrite(2, HIGH);
     digitalWrite(6, HIGH);
+    //delayMicroseconds(800);
     delayMicroseconds(720);
     digitalWrite(6, LOW);
+    //delayMicroseconds(800);
     delayMicroseconds(720);
     
   }
-  //digitalWrite(7, HIGH);
-  //delay(20);
 }
